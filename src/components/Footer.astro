@@ -1,21 +1,30 @@
 ---
-import Social from './Social.astro'
+import Social from "./Social.astro";
 
 const social_media = [
     {
         platform: "github",
-        username: "Crola1702"
+        username: "Crola1702",
     },
     {
         platform: "instagram",
-        username: "cristobal_arroyo_cas"
-    }
-]
+        username: "cristobal_arroyo_cas",
+    },
+];
 ---
 
 <footer>
     <h3>Learn more about my projects on:</h3>
     <ul>
-        { social_media.map((media) => <li><Social platform={media.platfom} username={media.username}/></li>) }
+        {
+            social_media.map((media) => (
+                <li>
+                    <Social
+                        platform={media.platform}
+                        username={media.username}
+                    />
+                </li>
+            ))
+        }
     </ul>
 </footer>

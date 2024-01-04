@@ -1,6 +1,6 @@
 ---
-import Navigation from '../components/Navigation.astro'
-import Footer from '../components/Footer.astro'
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 
 const pageTitle = "About Me";
 
@@ -30,7 +30,7 @@ const skillColor = "navy";
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <style define:vars={{skillColor}}>
+        <style define:vars={{ skillColor }}>
             h1 {
                 color: purple;
                 font-size: 4rem;
@@ -68,6 +68,6 @@ const skillColor = "navy";
         <ul>
             {skills.map((skill) => <li class="skill">{skill}</li>)}
         </ul>
-        <Footer/>
+        <Footer />
     </body>
 </html>
