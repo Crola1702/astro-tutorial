@@ -15,16 +15,20 @@ const social_media = [
 
 <footer>
     <h3>Learn more about my projects on:</h3>
-    <ul>
         {
             social_media.map((media) => (
-                <li>
                     <Social
                         platform={media.platform}
                         username={media.username}
                     />
-                </li>
             ))
         }
-    </ul>
 </footer>
+
+<style>
+    footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
